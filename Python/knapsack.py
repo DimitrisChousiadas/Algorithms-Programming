@@ -1,5 +1,5 @@
 
-# integer knapsack problem with dynamic programming
+# integer (0-1) knapsack problem with dynamic programming
 def knapsack (val, wt, capacity):
 
     # val: list of the values of the items
