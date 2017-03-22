@@ -1,6 +1,6 @@
 /*
     Given a 9x9 sudoku matrix from the keyboard, the following code determines whether or not the puzzle is solvable.
-    An empty cell is has 0.
+    0 means that the cell is empty.
     We use backtracking to solve the problem.
 */
 
