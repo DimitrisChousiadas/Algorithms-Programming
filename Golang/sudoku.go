@@ -21,7 +21,7 @@ func isSolvable () bool {
 
                 for test := 1; test <= 9; test++ {
 
-                    // we assume there is going to be some conflict with the test value we picked
+                    // we assume there is going to be no conflict with the test value we picked
                     conflict := false
 
                     // checking for a conflict in the same row
