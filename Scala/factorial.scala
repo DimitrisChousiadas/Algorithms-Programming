@@ -1,6 +1,10 @@
 // Factorial, with a nested, tail recursive function
+
+import scala.annotation.tailrec
+
 def factorial (n: Int) : Int = {
 
+    @tailrec
     def tailFact (n: Int, acc: Int) : Int = n match {
         case 0 => acc
         case 1 => acc

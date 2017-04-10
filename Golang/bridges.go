@@ -8,7 +8,7 @@
         4) the time when the node became explored
 
     A bridge, then, will be an edge (u,v) such that:
-        1) u is the parent of v in the DFS tree (bu definition, every bridge belongs to the DFS tree)
+        1) u is the parent of v in the DFS tree (by definition, every bridge belongs to the DFS tree)
         2) and there are no back edges from any of the descendants of u in the tree (including v)
             to any of v's ancestors (including u).
 

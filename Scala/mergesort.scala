@@ -2,6 +2,9 @@
     A tail recursive implementation of MergeSort
 */
 
+import scala.annotation.tailrec
+
+@tailrec
 def merge (l1: List[Int], l2: List[Int], mergedList: List[Int]) : List[Int] = (l1, l2) match {
     case (l1, Nil) => mergedList:::l1
     case (Nil, l2) => mergedList:::l2
@@ -21,6 +24,7 @@ def sort (ls: List[Int]) : List[Int] = ls match {
     }
 }
 
-val ls = List(10, 23, 12, 4, 0, 0, 56, 21)
+println("Enter the list of integers that you want to sort:")
+val ls = scala.io.StdIn.readLine.split(" ").map(_.toInt).toList
 
 println(sort(ls))
