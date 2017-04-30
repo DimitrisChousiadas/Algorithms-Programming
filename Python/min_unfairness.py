@@ -15,6 +15,9 @@
         Now, given the minimum value of a set, in order to minimize the unfairness in that set, we need the minimum maximum value that
         we can include in the set.
         If the min value is at position i in the list, the min max value will be at position i+K-1 (since the set has to have K elements)
+
+    This is, then, a greedy algorithm that runs in O(nlogn), since we have to sort the input.
+    We can then find the min unfairness by traversing the array in O(N-K) time.
 '''
 
 def find_min_unfairness (numbers, k):
