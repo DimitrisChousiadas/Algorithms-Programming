@@ -1,2 +1,0 @@
-# Hackerrank - Kingdom Division
-# TODO
