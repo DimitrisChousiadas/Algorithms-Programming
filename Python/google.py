@@ -29,7 +29,7 @@ def scan_list (nums, target):
         for pair in results:
             print(pair)
 
-def main ():
+if __name__ == "__main__":
 
     print("Enter the list of numbers:")
     nums = [int(x) for x in input().split()]
@@ -45,5 +45,3 @@ def main ():
     target = int(target)
 
     scan_list(nums, target)
-
-main()

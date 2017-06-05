@@ -29,7 +29,7 @@ def find_min_unfairness (numbers, k):
             val = test
     return val
 
-def main ():
+if __name__ == "__main__":
     print("Enter the parameter N:")
     n = int(input())
     print("Enter the parameter K")
@@ -43,5 +43,3 @@ def main ():
         numbers.sort()
         val = find_min_unfairness(numbers, k)
         print("The minimum value of unfairness is: ", val)
-
-main()

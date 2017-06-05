@@ -30,7 +30,7 @@ def find_sce (arr1, arr2):
     else:
         return (False, 0)
 
-def main ():
+if __name__ == "__main__":
     print("Enter the first input array:")
     arr1 = [int(x) for x in input().split()]
     print("Enter the second input array:")
@@ -40,5 +40,3 @@ def main ():
         print("The smallest common element is", elem)
     else:
         print("There is no common element between the arrays")
-
-main()

@@ -81,11 +81,9 @@ def max_subarray_mod (nums, m):
         bst.insert(cur_mod)
     return max_sofar
 
-def main ():
+if __name__ == "__main__":
     q = int(input())
     for _ in range(q):
         (_, m) = input().split()
         nums = [int(x) for x in input().strip().split()]
         print(max_subarray_mod(nums, int(m)))
-
-main()

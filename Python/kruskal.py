@@ -104,7 +104,7 @@ def kruskal (edges, group):
         i += 1
     return mst
 
-def main ():
+if __name__ == "__main__":
     print("Enter the number of nodes in the graph:")
     n = int(input())    # number of nodes in the graph
     adj_matrix = []     # the adjacency matrix of the graph
@@ -127,5 +127,3 @@ def main ():
             print("(" + str(mst[i].x) + "," + str(mst[i].y) + ")")
             total_weight += mst[i].w
         print("The total weight of the mst is: ", total_weight)
-
-main()

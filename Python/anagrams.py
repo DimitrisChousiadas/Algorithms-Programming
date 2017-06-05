@@ -20,12 +20,10 @@ def find_anagrams (words):
 
     return s
 
-def main ():
+if __name__ == "__main__":
     print("Enter the list of words:")
     words = [w for w in input().split()]
     anagrams = find_anagrams(words)
     print("The groups of mutual anagrams are:")
     for key in anagrams:
         print(anagrams[key])
-
-main()
